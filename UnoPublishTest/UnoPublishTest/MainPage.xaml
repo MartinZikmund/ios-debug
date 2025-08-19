@@ -10,7 +10,7 @@
                         VerticalAlignment="Top" Spacing="8">
                 <Border Width="100"
                          Height="100"
-                         Fill="White"
+                        Background="Green"
                          HorizontalAlignment="Center"
                          VerticalAlignment="Center" />
             </StackPanel>
