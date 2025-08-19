@@ -5,17 +5,16 @@
       Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <ScrollViewer IsTabStop="True">
         <Grid Background="Blue">
-            <StackPanel HorizontalAlignment="Center"
-                        VerticalAlignment="Center" Spacing="8">
+<Border Margin="4" Background="Pink" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <StackPanel HorizontalAlignment="Left"
+                        VerticalAlignment="Top" Spacing="8">
                 <Ellipse Width="100"
                          Height="100"
                          Fill="White"
                          HorizontalAlignment="Center"
                          VerticalAlignment="Center" />
-                <Button>
-                    <Border Width="50" Height="50" Background="Green" />
-                </Button>
             </StackPanel>
+</Border>
         </Grid>
     </ScrollViewer>
 </Page>
