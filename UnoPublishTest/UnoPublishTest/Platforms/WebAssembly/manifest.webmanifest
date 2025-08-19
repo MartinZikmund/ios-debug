@@ -1,0 +1,10 @@
+{
+  "background_color": "#ffffff",
+  "description": "UnoPublishTest",
+  "display": "standalone",
+  "name": "UnoPublishTest",
+  "short_name": "UnoPublishTest",
+  "start_url": "/index.html",
+  "theme_color": "#ffffff",
+  "scope": "/"
+}
