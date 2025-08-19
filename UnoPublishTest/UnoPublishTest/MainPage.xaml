@@ -8,7 +8,7 @@
 <Border Background="Pink" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
             <StackPanel HorizontalAlignment="Left"
                         VerticalAlignment="Top" Spacing="8">
-                <Ellipse Width="100"
+                <Border Width="100"
                          Height="100"
                          Fill="White"
                          HorizontalAlignment="Center"
