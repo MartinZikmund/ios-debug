@@ -12,13 +12,9 @@
                          Fill="White"
                          HorizontalAlignment="Center"
                          VerticalAlignment="Center" />
-                <Button>Text</Button>
-                <TextBlock AutomationProperties.AutomationId="HelloTextBlock"
-                           Text="Hello Uno Platform!"
-                           FontSize="64"
-                           Foreground="Red"
-                           HorizontalAlignment="Center" />
-                <Button>Other text</Button>
+                <Button>
+                    <Border Width="50" Height="50" Background="Green" />
+                </Button>
             </StackPanel>
         </Grid>
     </ScrollViewer>
