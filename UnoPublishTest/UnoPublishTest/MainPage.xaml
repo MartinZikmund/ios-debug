@@ -5,7 +5,7 @@
       Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <ScrollViewer IsTabStop="True">
         <Grid Background="Blue">
-<Border Background="Pink" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+<Border Margin="2" Background="Pink" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
             <StackPanel HorizontalAlignment="Left"
                         VerticalAlignment="Top" Spacing="8">
                 <Border Width="100"
