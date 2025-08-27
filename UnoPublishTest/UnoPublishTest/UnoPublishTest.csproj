@@ -1,6 +1,6 @@
-<Project Sdk="Uno.Sdk">
+﻿<Project Sdk="Uno.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net9.0-android;net9.0-ios;net9.0-browserwasm;net9.0-desktop</TargetFrameworks>
+    <TargetFrameworks>net9.0-ios</TargetFrameworks>
 
     <OutputType>Exe</OutputType>
     <UnoSingleProject>true</UnoSingleProject>
@@ -10,8 +10,8 @@
     <!-- App Identifier -->
     <ApplicationId>uno.platform.publishtest</ApplicationId>
     <!-- Versions -->
-    <ApplicationDisplayVersion>1.9</ApplicationDisplayVersion>
-    <ApplicationVersion>10</ApplicationVersion>
+    <ApplicationDisplayVersion>1.10</ApplicationDisplayVersion>
+    <ApplicationVersion>11</ApplicationVersion>
     <!-- Package Publishe -->
     <ApplicationPublisher>Martin</ApplicationPublisher>
     <!-- Package Description -->
@@ -25,4 +25,7 @@
         SkiaRenderer;
     </UnoFeatures>
   </PropertyGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'net9.0-ios'">
+    <PackageReference Include="SkiaSharp.NativeAssets.iOS" />
+  </ItemGroup>
 </Project>

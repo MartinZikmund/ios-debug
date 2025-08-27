@@ -7,4 +7,7 @@
   -->
   <ItemGroup>
   </ItemGroup>
+  <ItemGroup>
+    <PackageVersion Include="SkiaSharp.NativeAssets.iOS" Version="3.119.0" />
+  </ItemGroup>
 </Project>
