@@ -10,8 +10,8 @@
     <!-- App Identifier -->
     <ApplicationId>uno.platform.publishtest</ApplicationId>
     <!-- Versions -->
-    <ApplicationDisplayVersion>1.10</ApplicationDisplayVersion>
-    <ApplicationVersion>11</ApplicationVersion>
+    <ApplicationDisplayVersion>1.11</ApplicationDisplayVersion>
+    <ApplicationVersion>12</ApplicationVersion>
     <!-- Package Publishe -->
     <ApplicationPublisher>Martin</ApplicationPublisher>
     <!-- Package Description -->
