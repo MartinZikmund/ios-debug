@@ -1,10 +1,13 @@
 using System;
 using Microsoft.Extensions.Logging;
+using SkiaSharp;
 using Uno.Resizetizer;
 
 namespace UnoPublishTest;
 public partial class App : Application
 {
+    private List<Action> methods = new List<Action>();
+
     /// <summary>
     /// Initializes the singleton application object. This is the first line of authored code
     /// executed, and as such is the logical equivalent of main() or WinMain().
@@ -12,6 +15,16 @@ public partial class App : Application
     public App()
     {
         this.InitializeComponent();
+
+        unsafe
+        {
+            methods.Add(() => UnoSkiaApi.sk_canvas_set_matrix(0, default));
+            methods.Add(() => UnoSkiaApi.sk_canvas_draw_text_blob(0, 0, 0, 0, 0));
+            methods.Add(() => UnoSkiaApi.sk_rrect_set_rect_radii(0, default, default));
+            methods.Add(() => UnoSkiaApi.sk_textblob_builder_alloc_run_pos(0, 0, 0, default, default));
+            methods.Add(() => UnoSkiaApi.sk_textblob_builder_make(0));
+            methods.Add(() => UnoSkiaApi.sk_textblob_unref(0));
+        }
     }
 
     protected Window? MainWindow { get; private set; }
@@ -22,7 +35,11 @@ public partial class App : Application
 #if DEBUG
         MainWindow.UseStudio();
 #endif
-
+        var stringBuilder = new System.Text.StringBuilder();
+        foreach (var method in methods)
+        {
+            stringBuilder.Append(method?.ToString());
+        }
 
         // Do not repeat app initialization when the Window already has content,
         // just ensure that the window is active

@@ -13,6 +13,11 @@
                         Background="Green"
                          HorizontalAlignment="Center"
                          VerticalAlignment="Center" />
+                <Border Width="100"
+                         Height="100"
+                        Background="Blue"
+                         HorizontalAlignment="Center"
+                         VerticalAlignment="Center" />
             </StackPanel>
 </Border>
         </Grid>

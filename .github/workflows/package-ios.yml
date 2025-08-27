@@ -83,3 +83,16 @@ jobs:
           name: iOS_IPA
           path: |
             UnoPublishTest/UnoPublishTest/bin/Release/net9.0-ios/ios-arm64/publish/*.ipa
+
+      - name: Upload to TestFlight
+        uses: apple-actions/upload-testflight-build@v3
+        with:
+          # use the same IPA path you artifacted
+          app-path: "UnoPublishTest/UnoPublishTest/bin/Release/net9.0-ios/ios-arm64/publish/*.ipa"
+          issuer-id: ${{ secrets.APPSTORE_ISSUER_ID }}
+          api-key-id: ${{ secrets.APPSTORE_API_KEY_ID }}
+          api-private-key: ${{ secrets.APPSTORE_API_PRIVATE_KEY }}
+          # Optional QoL flags:
+          # beta-group: "Internal"          # name of your internal tester group in ASC
+          # submit-for-beta-review: false   # true if you want it auto-submitted for external
+          # whats-new: "Build uploaded via CI"
