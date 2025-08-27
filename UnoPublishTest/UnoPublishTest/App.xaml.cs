@@ -21,7 +21,6 @@ public partial class App : Application
             methods.Add(() => UnoSkiaApi.sk_canvas_set_matrix(0, default));
             methods.Add(() => UnoSkiaApi.sk_canvas_draw_text_blob(0, 0, 0, 0, 0));
             methods.Add(() => UnoSkiaApi.sk_rrect_set_rect_radii(0, default, default));
-            methods.Add(() => UnoSkiaApi.sk_textblob_builder_alloc_run_pos(0, 0, 0, default, default));
             methods.Add(() => UnoSkiaApi.sk_textblob_builder_make(0));
             methods.Add(() => UnoSkiaApi.sk_textblob_unref(0));
         }
