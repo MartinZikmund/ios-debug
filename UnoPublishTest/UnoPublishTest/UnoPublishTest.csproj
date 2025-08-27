@@ -24,10 +24,5 @@
     <UnoFeatures>
         SkiaRenderer;
     </UnoFeatures>
-
-      <MtouchExtraArgs>
-          $(MtouchExtraArgs)
-          --linker-flags="-Wl,-u,_sk_canvas_draw_text_blob -Wl,-u,_sk_canvas_set_matrix -Wl,-u,_sk_rrect_set_rect_radii -Wl,-u,_sk_textblob_builder_alloc_run_pos -Wl,-u,_sk_textblob_builder_make -Wl,-u,_sk_textblob_unref"
-      </MtouchExtraArgs>
   </PropertyGroup>
 </Project>
