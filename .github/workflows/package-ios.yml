@@ -88,7 +88,7 @@ jobs:
         uses: apple-actions/upload-testflight-build@v3
         with:
           # use the same IPA path you artifacted
-          app-path: "UnoPublishTest/UnoPublishTest/bin/Release/net9.0-ios/ios-arm64/publish/*.ipa"
+          app-path: "UnoPublishTest/UnoPublishTest/bin/Release/net9.0-ios/ios-arm64/publish/UnoPublishTest.ipa"
           issuer-id: ${{ secrets.APPSTORE_ISSUER_ID }}
           api-key-id: ${{ secrets.APPSTORE_API_KEY_ID }}
           api-private-key: ${{ secrets.APPSTORE_API_PRIVATE_KEY }}
